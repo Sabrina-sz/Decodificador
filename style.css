@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-dark-gray: #363636;
+  --color-darkest-gray: #212121;
+  --color-magenta: #ff00ff;
+  --color-light-gray: #a9a9a9;
+  --color-cyan: #0ff0fc;
+  --color-white: #ffffff;
+  --color-gray-black: #2f2f2f;
+}
+button {
+  cursor: pointer;
+}
+.swal2-popup {
+  background-color: var(--color-gray-black) !important;
+  color: var(--color-white) !important;
+  border-radius: 20px !important;
+  font-family: "montserrat", sans-serif !important;
+}
+.swal2-confirm {
+  background-color: transparent !important;
+  border: 2px groove var(--color-magenta) !important;
+  border-radius: 24px !important;
+  box-shadow: 0px 0px 10px var(--color-magenta)!important;
+  color: var(--color-white) !important;
+}
+.swal2-input{
+  background-color: transparent !important;
+  border: 2px solid var(--color-white) !important;
+  box-shadow: none !important;
+}
+.crypt-button:hover,
+.copy-button:hover {
+  background-color:transparent;
+  box-shadow: 0px 0px 10px var(--color-cyan), inset 0px 0px 10px var(--color-cyan);
+}
+.decrypt-button:hover{
+  box-shadow: 0px 0px 10px var(--color-magenta), inset 0px 0px 10px var(--color-magenta);
+}
+body {
+  font-family: "lato", sans-serif;
+  background-color: var(--color-darkest-gray);
+  color: var(--color-white);
+  font-size: 20px;
+}
+main {
+  box-shadow: 0px 0px 12px var(--color-magenta), inset 0px 0px 12px var(--color-magenta);
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  border: 4px groove var(--color-magenta);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 40px 15px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 31.09px;
+  height: 48px;
+  margin: 10px;
+}
+svg path {
+  fill: url(#gradient);
+}
+::placeholder {
+  font-family:"lato", sans-serif;
+  color: var(--color-white);
+}
+#main-textarea {
+  width: 700px;
+  height: 700px;
+  resize: none;
+  outline: none;
+  font-size: 32px;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  color: var(--color-white);
+  margin: 50px;
+  padding: 80px;
+  text-decoration: lowercase;
+  line-height: 150%;
+}
+.attention-text p {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  gap: 5px;
+  margin-bottom: 15px;
+  color: var(--color-light-gray);
+}
+.main-button {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.crypt-button {
+  box-shadow: 0px 0px 7px var(--color-cyan);
+  width: 328px;
+  height: 67px;
+  background-color: var(--color-cyan);
+  filter: saturate(65%);
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid var(--color-cyan);
+  border-radius: 24px;
+  padding: 24px 0px;
+  font-family:"roboto", sans-serif;
+  font-size: 16px;
+  color: var(--color-white);
+}
+.decrypt-button {
+  box-shadow: 0px 0px 7px var(--color-magenta);
+  width: 328px;
+  height: 67px;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid var(--color-magenta);
+  border-radius: 24px;
+  padding: 24px 0px;
+  font-family:"roboto", sans-serif;
+  font-size: 16px;
+  color: var(--color-white);
+}
+.element-information {
+  box-shadow: 0px 0px 8px var(--color-magenta);
+  border: 4px groove var(--color-magenta);
+  border-radius: 20px;
+  background-color: var(--color-gray-black);
+  border-radius: 32px;
+  width: 400px;
+  height: 944px;
+  text-align: center;
+}
+.element-information img {
+  display: flex;
+  margin-top: 130px;
+  width: 336px;
+  height: 336px;
+}
+.alert-text {
+  display: flex;
+  flex-direction: column;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  margin: 400px;
+}
+.alert-text p {
+  font-size: 16px;
+  margin-top: 20px; 
+}
+div.element-information textarea#textarea-crypt-decrypt,
+div.element-information button {
+  display: none;
+}
+div.element-information img,
+div.element-information div.alert-text {
+  display: initial;
+}
+div.element-information.visible img,
+div.element-information.visible div.alert-text {
+  display: none;
+}
+div.element-information.visible textarea#textarea-crypt-decrypt,
+div.element-information.visible button {
+  display: initial;
+}
+#textarea-crypt-decrypt {
+  resize: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 300px;
+  height: 150px;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 200;
+  color: var(--color-white);
+}
+.copy-button {
+  box-shadow: 0px 0px 10px var(--color-cyan);
+  width: 328px;
+  height: 67px;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid var(--color-cyan);
+  border-radius: 24px;
+  padding: 24px 0px;
+  font-family:"roboto", sans-serif;
+  font-size: 16px;
+  color: var(--color-white);
+  margin-top: 600px;
+}
+div.element-information.visible textarea#textareacrypt-decrypt {
+  width: 33.6rem;
+  height: 76.8rem;
+}
