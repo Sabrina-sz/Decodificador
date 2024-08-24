@@ -55,17 +55,20 @@ main {
   border: 4px groove var(--color-magenta);
   border-radius: 20px;
   margin: 20px;
-  padding: 40px 15px;
+  padding: 35px 20px;
 }
 header {
   display: flex;
   justify-content: space-between;
-  width: 31.09px;
-  height: 48px;
-  margin: 10px;
+
 }
 svg path {
   fill: url(#gradient);
+}
+svg{
+  width: 31.09px;
+  height: 48px;
+  margin-left: 15px;
 }
 ::placeholder {
   font-family:"lato", sans-serif;
@@ -141,6 +144,7 @@ svg path {
   width: 400px;
   height: 944px;
   text-align: center;
+  margin-right: 50px;
 }
 .element-information img {
   display: flex;
