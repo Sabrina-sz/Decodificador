@@ -77,7 +77,7 @@ svg path {
   resize: none;
   outline: none;
   font-size: 32px;
-  font-family: "roboto", sans-serif;
+  font-family: "bitter", sans-serif;
   font-weight: 400;
   background-color: transparent;
   border: none;
@@ -180,8 +180,8 @@ div.element-information.visible button {
   outline: none;
   border: none;
   background-color: transparent;
-  width: 300px;
-  height: 150px;
+  width: 320px;
+  height: 720px;
   margin-top: 50px;
   font-size: 40px;
   font-weight: 200;
@@ -200,7 +200,7 @@ div.element-information.visible button {
   font-family:"roboto", sans-serif;
   font-size: 16px;
   color: var(--color-white);
-  margin-top: 600px;
+  margin-top: 60px;
 }
 div.element-information.visible textarea#textareacrypt-decrypt {
   width: 33.6rem;
